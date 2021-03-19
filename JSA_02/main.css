@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Commissioner', sans-serif;
+}
+.max-width{
+    max-width: 70%;
+    margin: 0px auto;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid orange;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 200;
+   
+}
+.btn1{
+    color: white;
+    background-color: orange;
+}
+.btn2{
+    color: orange;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* header */
+header{
+    background-image: url("./images/hero.jpg");
+    background-size: cover;
+    height: 750px;
+    background-position: center;
+}
+header::before{
+    content: " ";
+    position: absolute;
+    height: 750px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+header div{
+    z-index: 2;
+}
+header nav img {
+    width: 100px;
+}
+header nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header nav .menu{
+    flex-basis: 55%;
+}
+header nav .menu ul{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.menu a{
+    text-transform: uppercase;
+    color: rgb(221, 221, 221);
+    font-size: 20px;
+    font-weight: 200;
+}
+.main{
+    position: relative;
+    margin: 200px auto  ;
+
+}
+.main p{
+    text-transform: uppercase;
+    color: rgb(228, 228, 228);
+    font-size: 46px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    line-height: 60px;
+}
+.main .btn1{
+    width: 150px;
+}
+.main .btn2{
+    width: 180px;
+}
+
+/* features */
+.features{
+    color: rgb(26, 26, 26);
+}
+.features h2{
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    padding: 80px 0;
+    text-transform: uppercase ;
+    
+}
+.features h2::before{
+    content: "";
+    position: absolute;
+    margin-bottom: 40px;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 2px;
+    background:orange;
+    transform: translateX(-50%);
+}
+.p1{
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+.features .contentser{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.features .contentser .card{
+    width: calc(25% - 30px);
+    padding: 10px 10px;
+}
+.features .contentser .card .box .icon{
+    font-size: 50px;
+    color: orange;
+    
+    
+}
+.features .contentser .card .box h3{
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
