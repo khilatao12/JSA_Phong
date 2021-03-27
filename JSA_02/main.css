@@ -142,3 +142,280 @@ header nav .menu ul{
     text-transform: uppercase;
     padding: 10px 0;
 }
+/* favourite-meals */
+.favourite-meals{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    position: relative;
+
+}
+.favourite-meals img{
+    width: 25%;
+ 
+}
+.favourite-meals::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* how it work */
+.how-it-work{
+    min-height: 500px;
+    background-color: #f5f5f5;
+}
+.how-it-work h2{
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    padding: 80px 0;
+    text-transform: uppercase ;
+    
+}
+.how-it-work h2::before{
+    content: "";
+    position: absolute;
+    margin-bottom: 40px;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 2px;
+    background:orange;
+    transform: translateX(-50%);
+}
+.how-it-work .content{
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+}
+.how-it-work .content .left{
+    flex-basis: 45%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.how-it-work .content .left img{
+    width: 210px;
+}
+.how-it-work .content .right{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 45%;
+    flex-direction: column;
+    
+}
+.p{
+    display: flex;
+}
+.how-it-work .content .right p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 10px  ;
+}
+.how-it-work .content .bot img{
+    height: 40px;
+    width: 135px;
+}
+.how-it-work .content span{
+    border: solid 2px orange;
+    min-height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    text-align: center  ;
+    font-size: 24px;
+    color: orange   ;
+    align-self: auto;
+   
+}
+
+/* cities */
+.cities h2{
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    padding: 80px 0;
+    text-transform: uppercase ;
+    
+}
+.cities h2::before{
+    content: "";
+    position: absolute;
+    margin-bottom: 40px;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 2px;
+    background:orange;
+    transform: translateX(-50%);
+}
+.cities-list{
+    display: flex;
+    justify-content: space-between;
+}
+.cities-list .cities-item{
+    max-width: 23%;
+}
+.cities-item img{
+    width: 100%;
+}
+.cities a{
+    text-decoration: underline;
+    color: orange;
+}
+.cities .cities-item p{
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.cities{
+    padding-bottom: 50px;
+}
+/* stock */
+.stock{
+    min-height: 500px;
+    background-color: #f5f5f5;
+    padding-bottom: 80px;
+}
+.stock h2{
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    padding: 80px 0;
+    text-transform: uppercase ;
+    
+}
+.stock h2::before{
+    content: "";
+    position: absolute;
+    margin-bottom: 40px;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 2px;
+    background:orange;
+    transform: translateX(-50%);
+}
+.stock .stock-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stock .card{
+    width: 30%;
+    padding: 10px;
+    background-color:white;
+    
+}
+.stock .card .top{
+    background-color: rgb(252, 252, 252);
+    padding: 10px 0;
+    border-bottom: solid 1px #f5f5f5;
+    
+}
+.stock .card .top h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+.stock .card .top .money{
+    color: orange;
+    padding: 5px 0;
+}
+.stock .card .top .money .dollar{
+    font-size: 30px;
+    font-weight: 100;
+}
+.stock .card .mid{
+    background-color: white;
+    border-bottom: solid 1px #f5f5f5;
+    padding: 10px 0;
+}
+.stock .card .bot{
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+/* contact */
+.contact{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact .right{
+    flex-basis: 60%;
+    
+}
+.contact .right .content{
+    display: flex;
+}
+.contact .right h2{
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    padding: 40px 0;
+    text-transform: uppercase ;
+    
+}
+.contact .right h2::before{
+    content: "";
+    position: absolute;
+    margin-bottom: 20px;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 2px;
+    background:orange;
+    transform: translateX(-50%);
+}
+.left1{
+    width: 30%;
+}
+.left1 p{
+    padding-bottom: 20px;
+}
+.right1{
+   width: 65%;
+   padding-bottom: 60px;
+}
+.right1 .input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 8px;
+}
+.right1 textarea{
+    width: 100%;
+    margin-top: 8px;
+}
+.right1 select{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 8px;
+}
+.right1 .btn1{
+    margin-top: 10px;
+}
+.footer{
+    padding: 60px 0;
+    background-color: rgb(39, 39, 39);
+    color: rgb(99, 99, 99);
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top .footer-left{
+    display: flex;
+}
+.footer-left div{
+    padding-left: 10px;
+}
+.footer-bot{
+    text-align:center;
+    padding-top: 30px;
+}
