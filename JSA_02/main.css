@@ -263,6 +263,9 @@ header nav .menu ul{
 .cities-item img{
     width: 100%;
 }
+.cities-item .content i{
+    color: orange;
+}
 .cities a{
     text-decoration: underline;
     color: orange;
@@ -322,6 +325,10 @@ header nav .menu ul{
     font-size: 20px;
     font-weight: 100;
     
+}
+.card .mid i{
+    padding-right: 5px;
+    color: orange;
 }
 .stock .card .top .money{
     color: orange;
@@ -411,6 +418,11 @@ header nav .menu ul{
 }
 .footer-top .footer-left{
     display: flex;
+}
+.footer-right a{
+    font-size: 24px;
+    padding: 5px;
+    color: rgb(99, 99, 99);
 }
 .footer-left div{
     padding-left: 10px;
