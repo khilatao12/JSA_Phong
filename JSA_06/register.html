@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register//MindX</title>
+</head>
+<body>
+    Ten :<input type="text" placeholder="Ten" id="user">
+    Tuoi :<input type="number" placeholder="Tuoi" id="tuoi">
+    Email :<input type="email" placeholder="Email" id="email">
+    <button id="signUp">Sign up</button><br>
+
+    <script>
+          
+        let userList= ["admin"]
+        let tuoiList= ["admin"]
+        let emailList= ["admin"]
+        if (localStorage.getItem("userList") === null){
+            localStorage.setItem("userList", JSON.stringify(userList))
+        
+        }
+        else {userList = JSON.parse(localStorage.getItem("userList"))}
+
+        if (localStorage.getItem("tuoiList") === null){
+            localStorage.setItem("tuoiList", JSON.stringify(tuoiList))
+        }
+        else{
+            passList = JSON.parse(localStorage.getItem("tuoiList"))
+        }
+
+
+        if (localStorage.getItem("emailList") === null){
+            localStorage.setItem("emailList", JSON.stringify(emailList))
+        }
+        else{
+            passList = JSON.parse(localStorage.getItem("emailList"))
+        }
+        let btn = document.getElementById("signUp")
+        btn.addEventListener("click", signUp)
+        
+        function signUp(){
+            let user = document.getElementById("user").value;
+            let tuoi = document.getElementById("tuoi").value;
+            let email = document.getElementById("email").value;
+            
+            if (user === ""){
+                alert("Khong duoc de trong")
+                return
+            }if (tuoi === ""){
+                alert("Khong duoc de trong")
+                return
+            }if (email === ""){
+                alert("Khong duoc de trong")
+                return
+            }
+            else{
+                userList.push(user)
+                tuoiList.push(tuoi)
+                emailList.push(email)
+
+                localStorage.setItem("userList", JSON.stringify(userList))
+                localStorage.setItem("tuoiList", JSON.stringify(tuoiList))
+                localStorage.setItem("emailList", JSON.stringify(emailList))
+                for (let i = 0; i <= userList.length;i++){
+                    if (i = userList.length-1){
+                        localStorage.setItem("isUser", userList[i])
+                        localStorage.setItem("isTuoi", tuoiList[i])
+                        localStorage.setItem("isEmail", emailList[i])
+                    }
+                }
+
+                document.getElementById("user").value = ""
+                        document.getElementById("tuoi").value = ""
+                        document.getElementById("email").value = ""
+
+                alert("dang ky thanh cong")
+                window.location.href = "./show.html"
+                return
+            }
+        }
+    </script>
+</body>
+</html>
