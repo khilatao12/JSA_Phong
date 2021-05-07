@@ -1,4 +1,4 @@
-let ul = document.querySelector('ul')
+let ul = document.querySelector('ul');
 fetch("https://6084decf9b2bed0017041593.mockapi.io/api/album")
     .then(response => response.json())
     .then(album => {
